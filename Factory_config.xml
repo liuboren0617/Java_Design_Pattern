@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+<!--传入完全限定名才能获取到类-->
+<className>creational.factory.factory.optimize.FileLogger</className>
+</config>
