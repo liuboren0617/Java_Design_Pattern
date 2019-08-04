@@ -8,15 +8,14 @@ package structural.decorator;
  */
 public class ConcreteDecoratorB extends Decorator {
 
-    private Component component;
 
     public ConcreteDecoratorB(Component component) {
-        this.component = component;
+        super(component);
     }
 
     @Override
     public void operation(){
-        this.component.operation();
+        super.operation();
         addBehavior();
     }
 

@@ -14,3 +14,4 @@ public class Client {
             decoratorB.operation();
     }
 }
+

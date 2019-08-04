@@ -8,9 +8,15 @@ package structural.decorator;
  */
 public class Decorator extends Component {
 
+    private Component component;
+
+    public Decorator(Component component) {
+        this.component = component;
+    }
 
     @Override
     void operation() {
+        this.component.operation();
         System.out.println("装饰者类的operation()");
     }
 }

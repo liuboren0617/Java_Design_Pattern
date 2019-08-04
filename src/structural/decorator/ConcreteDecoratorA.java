@@ -8,17 +8,16 @@ package structural.decorator;
  */
 public class ConcreteDecoratorA extends Decorator {
 
-    private Component component;
 
     private Integer addState = 0;
 
     public ConcreteDecoratorA(Component component) {
-        this.component = component;
+        super(component);
     }
 
     @Override
     public void operation(){
-        this.component.operation();
+        super.operation();
         addState++;
         System.out.println("addState = " + addState);
 
